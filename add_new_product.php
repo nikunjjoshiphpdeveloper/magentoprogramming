@@ -11,20 +11,20 @@
     // FIRST CREATE FOLDER "images" IN "media" folder and add image of product
     $mediaPath = Mage::getBaseDir('media').DS.'images'.DS;
 
-    $name = 'Name of the product';
+    $name = addslashes('Name of the product');
     
-    $description = 'Description of Product';
+    $description = addslashes('Description of Product');
     
-    $short_description = 'Short Description of Product';
+    $short_description = addslashes('Short Description of Product');
     
     $sku = 'sku-of-product';
     $url = 'url-of-product';
     
     $price = 15.75;
     
-    $meta_title = 'name or title';
-    $meta_keywords = 'Keywords of product';
-    $meta_description = 'meta Description';
+    $meta_title = addslashes('name or title');
+    $meta_keywords = addslashes('Keywords of product');
+    $meta_description = addslashes('meta Description');
     
     $mediaImage =  $mediaPath."noimageavailable.png"; // CHANGE WITH YOUR IMAGE NAME
 
